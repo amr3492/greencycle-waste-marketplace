@@ -7,7 +7,7 @@ contains design artifacts only; it does not integrate the UI into the Flutter ap
 
 **Live clickable prototype:** https://files.instinct.com/wcqwxwsq4mux-recircle-app-ui-8-screen-prototype
 
-![ReCircle screen preview](screens/preview-hero.png)
+**Preview:** [Open the clickable prototype](https://files.instinct.com/wcqwxwsq4mux-recircle-app-ui-8-screen-prototype)
 
 All people, products, NGOs, prices (EGP), points and bin data in the prototype are fictional sample content for the graduation project. The UI and interactions are a design prototype, not a live service, production integration, or validated AI result.
 
@@ -15,8 +15,8 @@ All people, products, NGOs, prices (EGP), points and bin data in the prototype a
 
 | Folder | Contents |
 | --- | --- |
-| `screens/` | All 20 screens as PNGs. Mobile screens are 390×844 (iPhone 15) rendered at 2x (780×1688); the two desktop boards are 1280×844 at 1.5x. |
-| `prototype/` | The same screens as standalone HTML + one shared `style.css`. Open `home.html` in a browser; every screen is pixel-identical to its PNG. `hotspots.json` maps each screen's tappable areas to routes (percent coordinates) and powers the clickable web prototype. |
+| `screens/` | PNG screen gallery is not included in this repository yet. View all 20 screens in the clickable prototype above. |
+| `prototype/` | All 20 screens as standalone HTML, one shared `style.css`, and `hotspots.json` with the tappable areas and routes. |
 | `generator/` | The Node scripts that produced everything (`helpers.mjs` design system + icons, `part1-4.mjs` screen markup, `build.mjs` renders PNGs and extracts hotspots, `gen-page.mjs` emits the hosted prototype page). Run `node build.mjs` with Playwright + Chrome to regenerate. |
 
 ## The 20 screens
