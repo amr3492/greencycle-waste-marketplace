@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><title>ReCircle - Sell Item</title></head>
+<body><div class="screen" id="scr"><div class="sb"><span>9:41</span><span class="sbi">
+<svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx=".8"/><rect x="4.5" y="5" width="3" height="6" rx=".8"/><rect x="9" y="2.5" width="3" height="8.5" rx=".8"/><rect x="13.5" y="0" width="3" height="11" rx=".8"/></svg>
+<svg width="16" height="11" viewBox="0 0 16 11" fill="currentColor"><path d="M8 9.2 5.6 6.8a3.4 3.4 0 0 1 4.8 0L8 9.2Z"/><path d="M3.4 4.6a6.5 6.5 0 0 1 9.2 0l-1.5 1.5a4.5 4.5 0 0 0-6.2 0L3.4 4.6Z" opacity=".9"/><path d="M.8 2.2a10.2 10.2 0 0 1 14.4 0l-1.5 1.5a8.2 8.2 0 0 0-11.4 0L.8 2.2Z" opacity=".75"/></svg>
+<svg width="25" height="12" viewBox="0 0 25 12" fill="none"><rect x=".5" y=".5" width="21" height="11" rx="3.2" stroke="currentColor" opacity=".45"/><rect x="2.3" y="2.3" width="15" height="7.4" rx="1.8" fill="currentColor"/><path d="M23.4 4v4a2.1 2.1 0 0 0 0-4Z" fill="currentColor" opacity=".45"/></svg>
+</span></div>
+<div class="scroll" style="display:flex;flex-direction:column;gap:10px;padding-bottom:100px">
+<div class="ab"><button class="ic" data-to="/home"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 6-6 6 6 6"/></svg></button><span class="ttl">Sell Item</span><button class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></button></div>
+<div style="margin:0 20px;height:88px;border-radius:18px;border:2px dashed var(--mint-2);background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--ink-3)">
+<span style="width:38px;height:38px;border-radius:12px;background:var(--mint);display:flex;align-items:center;justify-content:center;color:var(--green-d)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2.5h7L17 8h3a1.5 1.5 0 0 1 1.5 1.5V18a1.5 1.5 0 0 1-1.5 1.5H4A1.5 1.5 0 0 1 2.5 18V9.5A1.5 1.5 0 0 1 4 8Z"/><circle cx="12" cy="13.5" r="3.6"/></svg></span>
+<b style="font-size:12.5px;color:var(--ink-2)">Add Photos</b></div>
+<div style="padding:0 20px;display:flex;flex-direction:column;gap:10px">
+<div class="fld"><label>Item Name</label><div class="box"><span class="ph">e.g. Plastic Bottles</span></div></div>
+<div class="fld"><label>Category</label><div class="box"><span class="ph">Select Category</span><span style="color:var(--ink-3)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 6 6 6-6 6"/></svg></span></div></div>
+<div style="display:flex;gap:12px">
+<div class="fld" style="flex:1"><label>Price (EGP)</label><div class="box"><span class="ph">Enter price</span></div></div>
+<div class="fld" style="flex:1"><label>Quantity</label><div class="box"><span class="ph">1</span></div></div></div>
+<div class="fld"><label>Condition</label><div class="box"><div style="display:flex;gap:6px;width:100%"><span class="chip on" style="height:30px;font-size:11.5px;padding:0 12px">Like New</span><span class="chip" style="height:30px;font-size:11.5px;padding:0 12px">Good</span><span class="chip" style="height:30px;font-size:11.5px;padding:0 12px">Used</span></div></div></div>
+<div class="fld"><label>Description</label><div class="box tall" style="height:74px"><span class="ph">Enter description...</span></div></div>
+<button class="btn sm" data-to="/marketplace" style="margin-top:2px">Publish Item</button></div>
+</div><div class="nav">
+<button class="ni" data-to="/home"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg><span>Home</span></button>
+<button class="ni" data-to="/bins"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Bins</span></button>
+<button class="ni fabw" data-to="/scan"><span class="fab"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"/><circle cx="12" cy="12" r="3.2"/></svg></span><span style="margin-top:2px">Scan</span></button>
+<button class="ni on" data-to="/marketplace"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.8H8a1.8 1.8 0 0 1-1.8-1.8L5 8Z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg><span>Market</span></button>
+<button class="ni" data-to="/profile"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span>Profile</span></button>
+</div><div class="homebar"></div></div></body></html>
