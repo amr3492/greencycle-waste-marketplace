@@ -10,7 +10,7 @@ MTI University — Faculty of Computers & Artificial Intelligence Academic year 
 
 The [ReCircle design package](docs/design/README.md) is a UI design prototype created for this graduation project. It is design-only and is not integrated into the Flutter app. Its prototype uses fictional sample data for people, products, NGOs, EGP prices, points and smart-bin values. [Open the clickable prototype](https://files.instinct.com/wcqwxwsq4mux-recircle-app-ui-8-screen-prototype).
 
-![ReCircle UI screen preview](docs/design/screens/preview-hero.png)
+![ReCircle UI screen preview](https://github.com/user-attachments/assets/b7719990-1a1b-4e65-9a09-43c2e840b7f9)
 
 ## Project team
 
