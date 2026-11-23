@@ -1,0 +1,66 @@
+/* ReCircle design system - shared across all screens */
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+:root{
+  --green:#1E9E57; --green-d:#0F7A40; --green-dd:#0A5C30;
+  --mint:#E8F5EC; --mint-2:#D7EEDF; --ink:#122019; --ink-2:#5B6B60; --ink-3:#8CA093;
+  --line:#E4EBE5; --bg:#F4F7F4; --card:#FFFFFF;
+  --orange:#F2994A; --orange-bg:#FDF0E2; --red:#E2574C; --red-bg:#FCEBE9;
+  --blue:#3B82C4; --purple:#8B5CF6;
+  --sh:0 10px 24px rgba(18,32,25,.08); --sh-lg:0 18px 40px rgba(18,32,25,.14);
+}
+html,body{height:100%}
+body{font-family:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+.screen{position:relative;width:390px;height:844px;overflow:hidden;background:var(--bg);display:flex;flex-direction:column}
+.screen.wide{width:1280px}
+.scroll{flex:1;overflow:hidden;position:relative}
+.scroll>*{flex-shrink:0}
+svg{display:block}
+button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
+b,strong{font-weight:700}
+
+/* status bar */
+.sb{height:44px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 26px 0 28px;font-size:14.5px;font-weight:600;letter-spacing:.01em}
+.sb.on-dark{color:#fff}
+.sb .sbi{display:flex;align-items:center;gap:6px}
+
+/* bottom nav */
+.nav{position:absolute;left:0;right:0;bottom:0;height:86px;background:#fff;border-top:1px solid var(--line);display:flex;align-items:flex-start;padding:12px 10px 0;z-index:20}
+.nav .ni{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--ink-3);font-size:10.5px;font-weight:600;padding-top:4px}
+.nav .ni.on{color:var(--green)}
+.nav .fab{width:58px;height:58px;margin-top:-30px;border-radius:50%;background:linear-gradient(160deg,#27B266,#128046);display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 12px 24px rgba(20,140,75,.4);border:4px solid #fff}
+.nav .ni.fabw{padding-top:8px}
+.homebar{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:134px;height:5px;border-radius:3px;background:rgba(18,32,25,.28);z-index:30}
+
+/* app bar */
+.ab{flex:none;display:flex;align-items:center;gap:12px;padding:8px 20px 12px;background:transparent}
+.ab .ttl{flex:1;text-align:center;font-size:17px;font-weight:700}
+.ab .ic{width:38px;height:38px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.ab .sp{width:38px}
+
+/* buttons */
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:54px;border-radius:16px;background:linear-gradient(160deg,#24AE60,#12824A);color:#fff;font-size:15.5px;font-weight:700;box-shadow:0 12px 22px rgba(20,140,75,.32)}
+.btn.ghost{background:#fff;color:var(--green-d);border:1.5px solid var(--mint-2);box-shadow:none}
+.btn.sm{height:44px;border-radius:13px;font-size:14px}
+.btn.dark{background:var(--ink);box-shadow:0 10px 20px rgba(18,32,25,.25)}
+
+/* form fields */
+.fld{display:flex;flex-direction:column;gap:7px}
+.fld label{font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.fld .box{display:flex;align-items:center;gap:10px;height:52px;border-radius:14px;border:1.5px solid var(--line);background:#fff;padding:0 16px;color:var(--ink-2)}
+.fld .box .val{flex:1;font-size:14px;color:var(--ink)}
+.fld .box .ph{flex:1;font-size:14px;color:var(--ink-3)}
+.fld .box.tall{height:96px;align-items:flex-start;padding-top:14px}
+
+/* chips */
+.chips{display:flex;gap:8px;overflow:hidden}
+.chip{flex:none;height:36px;padding:0 16px;border-radius:999px;background:#fff;border:1.5px solid var(--line);color:var(--ink-2);font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip.t{height:34px;padding:0 11px;font-size:12px}
+
+/* generic card */
+.card{background:var(--card);border-radius:20px;box-shadow:var(--sh);border:1px solid rgba(18,32,25,.03)}
+.secttl{display:flex;align-items:center;justify-content:space-between;font-size:16px;font-weight:800;padding:0 20px}
+.secttl a{font-size:12.5px;font-weight:700;color:var(--green)}
+
+/* logo */
+.logomark{width:44px;height:44px;border-radius:14px;background:linear-gradient(150deg,#27B266,#0E7C42);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(20,140,75,.35)}
