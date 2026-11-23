@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">GreenCycle</title>
+  <desc id="d">A leaf framed by a circular reuse arrow.</desc>
+  <rect width="64" height="64" rx="18" fill="#0f5635"/>
+  <path d="M42 14c-14 0-24 8-24 21 0 5 3 9 8 9 13 0 18-13 16-30Z" fill="#e9f5eb"/>
+  <path d="M19 47c5-8 12-15 21-21" fill="none" stroke="#2d995b" stroke-linecap="round" stroke-width="3"/>
+  <path d="M45 39a18 18 0 0 1-25 10l-3-2 1 7-7-8 9-2-4 4a14 14 0 0 0 26-9M19 25a18 18 0 0 1 26-9l3 2-1-7 7 8-9 2 4-4a14 14 0 0 0-26 9" fill="#79cb91"/>
+</svg>
