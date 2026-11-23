@@ -6,6 +6,12 @@ Graduation project implementation: a cross-platform mobile app that connects sma
 
 MTI University — Faculty of Computers & Artificial Intelligence Academic year 2025/2026
 
+
+> **GreenCycle · Student graduation project**
+> [Project site](https://amr3492.github.io/greencycle-waste-marketplace/) · [Interactive app demo](https://amr3492.github.io/greencycle-waste-marketplace/app.html) · [ReCircle UI concept](docs/design/README.md)
+>
+> A cross-platform Flutter demonstration of a circular-reuse concept. The smart-bin hardware, waste classification, marketplace transactions, payments, rewards and sample account activity shown in the app are simulated. This is not a live waste collection or production marketplace service.
+
 ## ReCircle UI design
 
 The [ReCircle design package](docs/design/README.md) is a UI design prototype created for this graduation project. It is design-only and is not integrated into the Flutter app. Its prototype uses fictional sample data for people, products, NGOs, EGP prices, points and smart-bin values. [Open the clickable prototype](https://files.instinct.com/wcqwxwsq4mux-recircle-app-ui-8-screen-prototype).
