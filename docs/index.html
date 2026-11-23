@@ -1,58 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="/greencycle-waste-marketplace/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!--
-    Uncomment the tag below to lay the app out underneath the parts of the
-    screen that the device obstructs, such as a display cutout, the rounded
-    corners of the screen, or a home indicator.
-
-    Without it, the browser keeps the app clear of them, and `SafeArea` and
-    `MediaQuery.paddingOf` report no padding. With it, the app covers the whole
-    screen, and it is up to the app to keep its own content out of the way,
-    which is what `SafeArea` is for.
-  -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> -->
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="greencycle">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>greencycle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f7a40">
+  <meta name="description" content="Explore GreenCycle, a student graduation-project demo for connecting recycling, smart-bin concepts, and a materials marketplace. Hardware and transactions are simulated.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GreenCycle | A cycle for better reuse">
+  <meta property="og:description" content="A student-built Flutter demo connecting recycling concepts, smart bins and a reuse marketplace.">
+  <meta property="og:url" content="https://amr3492.github.io/greencycle-waste-marketplace/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="manifest" href="manifest.json">
+  <title>GreenCycle | A cycle for better reuse</title>
+  <style>
+    :root{color-scheme:light;--forest:#0f5635;--green:#167946;--leaf:#2d995b;--mint:#e7f3eb;--paper:#f5f8f4;--ink:#14251b;--muted:#617268;--line:#dce8df;--white:#fff;--shadow:0 24px 60px rgba(18,52,32,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit} .wrap{width:min(1140px,calc(100% - 48px));margin:auto}
+    .top{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand img{width:42px;height:42px}.brand-name{font-weight:800;letter-spacing:-.04em;font-size:19px}.brand-sub{font-size:11px;color:var(--muted);margin-top:-3px}.nav{display:flex;align-items:center;gap:26px;font-size:14px;color:#486052}.nav a{text-decoration:none}.nav a:hover{color:var(--green)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:13px 18px;text-decoration:none;font-size:14px;font-weight:700;transition:transform .15s,box-shadow .15s}.button:hover{transform:translateY(-1px)}.button.primary{background:var(--green);color:white;box-shadow:0 8px 18px rgba(22,121,70,.2)}.button.secondary{border:1px solid var(--line);background:white;color:var(--forest)}
+    .hero{padding:70px 0 64px;background:radial-gradient(ellipse at 86% 10%,rgba(181,223,193,.52),transparent 32%),linear-gradient(180deg,#f4f8f3 0%,#eef6ef 100%);border-top:1px solid #edf2ed;border-bottom:1px solid #e3ece4}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#e2f0e6;color:#1c6740;border:1px solid #d2e8d8;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:700;letter-spacing:.025em}.dot{width:7px;height:7px;background:#38a969;border-radius:50%}h1{max-width:640px;margin:20px 0 17px;font-size:clamp(42px,5.2vw,68px);line-height:1.04;letter-spacing:-.065em;font-weight:800;color:#143d28}.lead{max-width:555px;margin:0;color:#52685a;font-size:17px;line-height:1.75}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.smallnote{margin-top:18px;color:#75857a;font-size:12px}
+    .visual{position:relative;min-height:370px;border-radius:28px;padding:26px;background:linear-gradient(145deg,#145d39,#0b472d);box-shadow:var(--shadow);overflow:hidden;color:white}.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.1)}.visual:before{width:270px;height:270px;right:-78px;top:-102px}.visual:after{width:190px;height:190px;left:-94px;bottom:-109px}.visual-head{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center}.visual-head strong{font-size:13px}.status{font-size:11px;color:#d0ebd7;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:5px 9px}.cycle-card{position:relative;z-index:1;background:rgba(255,255,255,.97);color:var(--ink);border-radius:20px;padding:21px;margin-top:25px;box-shadow:0 15px 30px rgba(2,29,15,.18)}.cycle-top{display:flex;align-items:center;gap:12px}.mini-icon{width:44px;height:44px;background:#e6f3e9;border-radius:14px;display:grid;place-items:center;color:#16804a}.cycle-top small{color:#77857a;font-size:11px}.cycle-top b{display:block;font-size:15px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:22px}.step{text-align:center;font-size:11px;color:#587063}.step-icon{width:44px;height:44px;margin:0 auto 8px;background:#f0f6f1;border:1px solid #e1ece2;border-radius:14px;display:grid;place-items:center;color:#247748}.step svg{width:21px;height:21px}.flowline{height:2px;background:#cbded0;margin:-28px 12% 26px;position:relative;z-index:-0}.visual-caption{position:relative;z-index:1;color:#d1e7d7;font-size:11px;margin:17px 2px 0}
+    .section{padding:70px 0}.section-head{max-width:650px;margin:0 auto 34px;text-align:center}.kicker{color:var(--green);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.section h2{font-size:34px;line-height:1.16;letter-spacing:-.045em;color:#163b28;margin:10px 0}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #e4ece5;border-radius:18px;padding:23px;box-shadow:0 8px 22px rgba(18,52,32,.045)}.card-icon{width:42px;height:42px;border-radius:13px;background:var(--mint);color:var(--green);display:grid;place-items:center}.card h3{margin:17px 0 7px;font-size:16px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}.honest{background:#edf5ee;border:1px solid #dcebdd;border-radius:18px;padding:24px 27px;display:flex;gap:16px;align-items:flex-start}.honest-icon{color:#1d7844;flex:0 0 auto}.honest h3{font-size:15px;margin:0 0 5px}.honest p{font-size:13px;color:#586c5e;margin:0}.bottom{border-top:1px solid var(--line);padding:24px 0;color:#6d7c71;font-size:12px}.bottom-inner{display:flex;justify-content:space-between;gap:20px}.bottom a{color:#286c45;text-decoration:none}.bottom a:hover{text-decoration:underline}
+    @media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:34px}.hero{padding:48px 0}.visual{min-height:340px}.cards{grid-template-columns:1fr}.section{padding:55px 0}.nav a:not(.button){display:none}.wrap{width:min(100% - 32px,600px)}}
+    @media(max-width:480px){.top{height:68px}.brand-sub{display:none}.nav{gap:8px}.nav .button{padding:10px 12px;font-size:12px}.hero{padding:38px 0}.lead{font-size:15px}.visual{padding:19px;min-height:330px}.cycle-card{padding:17px}.steps{gap:3px}.step{font-size:10px}.section h2{font-size:28px}.honest{padding:19px}.bottom-inner{flex-direction:column}}
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+  <header class="wrap top">
+    <a class="brand" href="./" aria-label="GreenCycle home">
+      <img src="favicon.svg" alt="">
+      <span><span class="brand-name">GreenCycle</span><span class="brand-sub">Towards a Sustainable World</span></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="https://github.com/amr3492/greencycle-waste-marketplace#greencycle--green-e-commerce-mobile-application-for-wastes">Project</a>
+      <a href="https://github.com/amr3492/greencycle-waste-marketplace/blob/main/docs/design/README.md">ReCircle design</a>
+      <a class="button primary" href="app.html">Open demo <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> MTI University · Graduation project</div>
+          <h1>Make recycling part of the everyday cycle.</h1>
+          <p class="lead">GreenCycle explores how a connected recycling experience could bring people, smart-bin concepts and reusable materials closer together, from sorting to a second life.</p>
+          <div class="actions">
+            <a class="button primary" href="app.html">Explore the interactive demo <span aria-hidden="true">→</span></a>
+            <a class="button secondary" href="https://github.com/amr3492/greencycle-waste-marketplace">See the project on GitHub</a>
+          </div>
+          <p class="smallnote">A student graduation-project demonstration. No live bin fleet or production marketplace is connected.</p>
+        </div>
+        <div class="visual" aria-label="Illustration of the GreenCycle recycling concept">
+          <div class="visual-head"><strong>A simple cycle, designed to connect</strong><span class="status">Project concept</span></div>
+          <div class="cycle-card">
+            <div class="cycle-top"><span class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><path d="M20 4c-8.5 0-14 4.7-14 12.5 0 2 1.4 3.5 3.5 3.5C17.3 20 20 12.5 20 4Z"/><path d="M5 20c3-4.5 6.2-7.4 10-10"/></svg></span><span><small>GreenCycle · project overview</small><b>From waste to new value</b></span></div>
+            <div class="steps">
+              <div class="step"><span class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"/><circle cx="12" cy="12" r="3"/></svg></span>Collect</div>
+              <div class="step"><span class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 4.2v9.6L12 21l-8-4.2V7.2L12 3Z"/><path d="M4.2 7.4 12 11.6l7.8-4.2M12 11.6V21"/></svg></span>Sort*</div>
+              <div class="step"><span class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.8H8a1.8 1.8 0 0 1-1.8-1.8L5 8Z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg></span>Reuse</div>
+              <div class="step"><span class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><path d="M9 10.5h6M12 7.5v6"/></svg></span>Reward*</div>
+            </div>
+          </div>
+          <p class="visual-caption">* Sorting, bin status and reward flows shown in the demo are simulated.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section wrap">
+      <div class="section-head"><div class="kicker">The project</div><h2>One connected idea for circular use.</h2><p>A cross-platform Flutter graduation project, shown here as an interactive demonstration.</p></div>
+      <div class="cards">
+        <article class="card"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="21" height="21" aria-hidden="true"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"/><circle cx="12" cy="12" r="3"/></svg></span><h3>Recycle</h3><p>Explore a guided recycling flow with a simulated scan and sorting sequence.</p></article>
+        <article class="card"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="21" height="21" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.8H8a1.8 1.8 0 0 1-1.8-1.8L5 8Z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg></span><h3>Reuse</h3><p>Browse a sample marketplace for recyclable materials and upcycled products.</p></article>
+        <article class="card"><span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="21" height="21" aria-hidden="true"><path d="M5 19C5 9 12 4 20 4c0 9-5 15-14 15Z"/><path d="M5 19c3-6 7-9 11-11"/></svg></span><h3>Earn</h3><p>See how eco-points and rewards could support participation in the concept.</p></article>
+      </div>
+    </section>
+    <section class="wrap" style="padding-bottom:64px">
+      <aside class="honest"><span class="honest-icon" aria-hidden="true">ⓘ</span><div><h3>Demo status</h3><p>This is a student project demo, not a live environmental service. Smart-bin hardware, AI waste classification, payment and sample account activity are simulated; listings and other content are demonstration data.</p></div></aside>
+    </section>
+  </main>
+  <footer class="bottom"><div class="wrap bottom-inner"><span>GreenCycle · MTI University graduation project · Academic year 2025/2026</span><span><a href="https://github.com/amr3492/greencycle-waste-marketplace">Project documentation</a> · <a href="https://github.com/amr3492/greencycle-waste-marketplace/blob/main/docs/design/README.md">ReCircle UI design</a></span></div></footer>
 </body>
-</html>
+                                     </html>
